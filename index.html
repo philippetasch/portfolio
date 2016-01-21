@@ -13,12 +13,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,900" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
     <title> Philippe Tasch | Webdesigner </title>
-    <meta name="description" content="Site personnel de Philippe Tasch, Webdesigner - intégrateur.">
+    <meta name="description" content="Site personnel de Philippe Tasch, Webdesigner - Intégrateur.">
     <meta name="keywords" content="HTML5, CSS3, Responsive Web Design, UX, UI, Webdesigner, Intégrateur, CV, Compétences, Accessibilité">
     <meta name="author" content="Philippe Tasch">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <link rel="stylesheet" href="css/styles.min.css">
+
+
     <!--[if lt IE 9]><script src="bower_components/html5shiv/dist/html5shiv.js"></script><![endif]-->
 </head>
 <body>
@@ -31,15 +34,16 @@
 
 		
     <div class="wrapper stretch--v">
+
         <header class="bigSlice bigSlice--header headroom--home">
     <div class="maxWrapper maxWrapper--header gridClear">
-            <div id="trigger" class="trigger">
+            <button id="trigger" class="trigger">
             <div class="trigger__label">Menu</div>
                 <span class="trigger__bar trigger__bar--1"></span>
                 <span class="trigger__bar trigger__bar--2"></span>
                 <span class="trigger__bar trigger__bar--3"></span>
                 <span class="trigger__bar trigger__bar--4"></span>
-            </div>
+            </button>
             <ul class="navigation gridClear" role="navigation">
                 <li class="navigation__item">
                     <a class="navigation__link link--1" data-scroll href="#about">Parcours</a>
@@ -47,12 +51,10 @@
                 <li class="navigation__item">
                     <a data-scroll href="#skills" class="navigation__link link--2">Competences</a>
                 </li>
-                <li class="navigation__item dropdown animate--sub">
-                    <span class="navigation__link link--3 dropdown-toggle">Projets</span>
+                <li class="navigation__item dropdown" aria-haspopup="true">
+                    <a data-scroll href="#projects" class="navigation__link link--3">Projets Récents</a>
+                    <button class="dropdown-toggle"></button>
                     <ul class="navigation__subnav">
-                        <li class="navigation__subnav__item">
-                            <a data-scroll href="#projects" class="navigation__link link--3--1">Aperçu</a>
-                        </li>
                         <li class="navigation__subnav__item">
                             <a href="projets.html" class="navigation__link link--3--2">Tous</a>
                         </li>
@@ -82,33 +84,33 @@
                         <div class="about__icon--wrapper about__icon--wrapper--left">
                             <i class="fa fa-graduation-cap about__icon"></i>
                         </div>
-                         <p class="about__text">J&#39;obtiens mon baccalauréat en sciences sociales en 2008, année lors de laquelle je viens m&#39;installer à Strasbourg afin d&#39;y poursuivre des études supérieures. J&#39;opte pour une licence de «langues littératures et civilisations étrangères», en japonais. S&#39;ensuivent quatre années de licence, dont l&#39;une d&#39;elles au Japon, à l&#39;université d&#39;Ôsaka, dans le cadre d&#39;un échange inter-universitaire avec l&#39;université de Strasbourg.</p>
+                         <p class="about__text">J'obtiens mon baccalauréat en sciences sociales en 2008, année lors de laquelle je viens m'installer à Strasbourg afin d'y poursuivre des études supérieures. J'opte pour une licence de «langues littératures et civilisations étrangères», en japonais. S'ensuivent quatre années de licence, dont l'une d'elles au Japon, à l'université d'Ôsaka, dans le cadre d'un échange inter-universitaire avec l'université de Strasbourg.</p>
                     </div>
                 
                     <div class="c-both about__wrapper--right about__wrapper">
                         <div class="about__icon--wrapper about__icon--wrapper--right">
                             <i class="fa fa-language about__icon"></i>
                         </div>
-                         <p class="about__text">Je rentre du Japon après une année d&#39;études, et obtiens ma licence. Après quatre ans de japonais, j&#39;ai envie de changer d&#39;air, d&#39;élargir mes horizons en quelque sorte. C&#39;est alors que je découvre le master CAWEB, qui forme à la création de sites web multilingues sous toutes ses coutures. De la traduction technique à la localisation en passant par la gestion de projet sans oublier les fondamentaux : HTML, CSS, Javascript et bien d&#39;autres, tout est couvert!</p>
+                         <p class="about__text">Je rentre du Japon après une année d'études, et obtiens ma licence. Après quatre ans de japonais, j'ai envie de changer d'air, d'élargir mes horizons en quelque sorte. C'est alors que je découvre le master CAWEB, qui forme à la création de sites web multilingues sous toutes ses coutures. De la traduction technique à la localisation en passant par la gestion de projet sans oublier les fondamentaux : HTML, CSS, Javascript et bien d'autres, tout est couvert!</p>
                     </div>
                 
                     <div class="c-both about__wrapper--left about__wrapper">
                         <div class="about__icon--wrapper about__icon--wrapper--left">
                             <i class="fa fa-laptop about__icon"></i>
                         </div>
-                         <p class="about__text">La diversité des cours dispensés en Master CAWEB m&#39;a permis d&#39;acquérir les connaissances techniques nécessaires à la création de sites. J&#39;effectue une veille technologique constante afin de me tenir informé des dernières nouveautés en matière de technologie web, ce qui me permet de démarrer tout nouveau projet en y appliquant de nouvelles connaissances.</p>
+                         <p class="about__text">La diversité des cours dispensés en Master CAWEB m'a permis d'acquérir les connaissances techniques nécessaires à la création de sites. J'effectue une veille technologique constante afin de me tenir informé des dernières nouveautés en matière de technologie web, ce qui me permet de démarrer tout nouveau projet en y appliquant de nouvelles connaissances.</p>
                     </div>
                 
                     <div class="c-both about__wrapper--right about__wrapper">
                         <div class="about__icon--wrapper about__icon--wrapper--right">
                             <i class="fa fa-check about__icon"></i>
                         </div>
-                         <p class="about__text">Titulaire du diplôme de Master CAWEB, je dispose des connaissances nécessaires pour mener à bien la réalisation d&#39;un site web.  Mon panel de connaissances en langues, dans le domaine du web, ainsi que dans la gestion de projet me permet de prendre part à de nombreuses étapes de la conception de sites. Rigoureux et motivé, je sais travailler en équipe et respecter les délais.</p>
+                         <p class="about__text">Titulaire du diplôme de Master CAWEB, je dispose des connaissances nécessaires pour mener à bien la réalisation d'un site web.  Mon panel de connaissances en langues, dans le domaine du web, ainsi que dans la gestion de projet me permet de prendre part à de nombreuses étapes de la conception de sites. Rigoureux et motivé, je sais travailler en équipe et respecter les délais.</p>
                     </div>
                 
             </div>
                 <a href="cv/cv_Tasch_Philippe.pdf" class="btn btn--slice btn--cv">
-                    Téléchargez mon CV !
+                    Voir mon CV !
                 </a>
         </section>
         <section id="skills" class="bigSlice bigSlice--skills slicePad--h slope-bottom">
@@ -122,7 +124,7 @@
                     </span>
                     HTML5 / CSS3
                     </h3>
-                    <p class="skills__text">J&#39;ai acquis de très bonnes compétences en HTML5 ainsi qu&#39;en CSS3, que j&#39;utilise au mieux dans mes réalisations. Je tire pleinement parti de ces nouvelles technologies tout en gardant la compatibilité et la performance à l&#39;esprit. J&#39;ai également des bases en JavaScript et en PHP grâces auxquelles je sais me repérer lorsque j&#39;y suis confronté.</p>
+                    <p class="skills__text">J'ai acquis de très bonnes compétences en HTML5 ainsi qu'en CSS3, que j'utilise au mieux dans mes réalisations. Je tire pleinement parti de ces nouvelles technologies tout en gardant la compatibilité et la performance à l'esprit. J'ai également des bases en JavaScript et en PHP grâces auxquelles je sais me repérer lorsque j'y suis confronté.</p>
                 </div>
             
                     <div class="grids--clear g-3">
@@ -132,7 +134,7 @@
                     </span>
                     Responsive Web Design
                     </h3>
-                    <p class="skills__text">Le terme phare du monde du web ces dernières années. L&#39;utilisation croissante de supports mobiles comme moyen d&#39;accès à internet force les interfaces à s&#39;adapter. Aujourd&#39;hui, tout projet démarre avec la question de savoir comment proposer la meilleure expérience utilisateur sur n&#39;importe quel appareil. Le RWD s&#39;y prête à merveille!</p>
+                    <p class="skills__text">Le terme phare du monde du web ces dernières années. L'utilisation croissante de supports mobiles comme moyen d'accès à internet force les interfaces à s'adapter. Aujourd'hui, tout projet démarre avec la question de savoir comment proposer la meilleure expérience utilisateur sur n'importe quel appareil. Le RWD s'y prête à merveille!</p>
                 </div>
             
                     <div class="grids--clear g-3">
@@ -142,7 +144,7 @@
                     </span>
                     CMS
                     </h3>
-                    <p class="skills__text">J&#39;ai travaillé sur des projets requérant l&#39;utilisation de systèmes de gestion de contenu. J&#39;ai pu m&#39;essayer à Wordpress, Joomla ainsi qu&#39;à Drupal et me forger une certaine expérience dans leur manipulation. Wordpress est le CMS avec lequel je suis le plus familier: c&#39;est d&#39;ailleurs sous Wordpress que j&#39;ai créé mon projet de première année de master. </p>
+                    <p class="skills__text">J'ai travaillé sur des projets requérant l'utilisation de systèmes de gestion de contenu. J'ai pu m'essayer à Wordpress, Joomla ainsi qu'à Drupal et me forger une certaine expérience dans leur manipulation. Wordpress est le CMS avec lequel je suis le plus familier: c'est d'ailleurs sous Wordpress que j'ai créé mon projet de première année de master. </p>
                 </div>
             
                     <div class="grids--clear g-3">
@@ -152,7 +154,7 @@
                     </span>
                     Photoshop / Illustrator
                     </h3>
-                    <p class="skills__text">Étant amené à réaliser divers contenus graphiques tels que des maquettes, des logos ou encore des mock-ups, j&#39;ai recours à des logiciels tels qu&#39;adobe Photoshop ou adobe Illustrator. J&#39;ai également une certaine expérience dans l&#39;utilisation d&#39;adobe Premiere Pro et InDesign. </p>
+                    <p class="skills__text">Étant amené à réaliser divers contenus graphiques tels que des maquettes, des logos ou encore des mock-ups, j'ai recours à des logiciels tels qu'adobe Photoshop ou adobe Illustrator. J'ai également une certaine expérience dans l'utilisation d'adobe Premiere Pro et InDesign. </p>
                 </div>
             
                     <div class="grids--clear g-3">
@@ -162,7 +164,7 @@
                     </span>
                     Langues
                     </h3>
-                    <p class="skills__text">J&#39;ai cinq langues à mon actif: le français et le luxembourgeois comme langues maternelles, l&#39;allemand ainsi que l&#39;anglais que je parle couramment. Vient s&#39;y ajouter le japonais que j&#39;ai étudié intensivement pendant quatre années, suivies de deux années lors du master CAWEB. J&#39;ai pu mettre à profit ces compétences lors de projets nécessitant des traductions de contenus vers plus d&#39;une langue cible.</p>
+                    <p class="skills__text">J'ai cinq langues à mon actif: le français et le luxembourgeois comme langues maternelles, l'allemand ainsi que l'anglais que je parle couramment. Vient s'y ajouter le japonais que j'ai étudié intensivement pendant quatre années, suivies de deux années lors du master CAWEB. J'ai pu mettre à profit ces compétences lors de projets nécessitant des traductions de contenus vers plus d'une langue cible.</p>
                 </div>
             
                     <div class="grids--clear g-3">
@@ -172,7 +174,7 @@
                     </span>
                     Gestion de projet / SEO
                     </h3>
-                    <p class="skills__text">Initié au domaine de la gestion de projet, j&#39;ai pleinement conscience des différentes étapes par lesquelles passe la réalisation d&#39;un site web et des contraintes pouvant survenir lors de la réalisation d&#39;un projet. Le référencement ne m&#39;est pas inconnu; je suis capable de rédiger des textes optimisés pour les moteurs de recherche.</p>
+                    <p class="skills__text">Initié au domaine de la gestion de projet, j'ai pleinement conscience des différentes étapes par lesquelles passe la réalisation d'un site web et des contraintes pouvant survenir lors de la réalisation d'un projet. Le référencement ne m'est pas inconnu; je suis capable de rédiger des textes optimisés pour les moteurs de recherche.</p>
                 </div>
             
         </div>
@@ -249,18 +251,30 @@
             </div>
         </div>
 
+
+
     </section>
-    <footer class="bigslice bigSlice--footer slicePad--h slicePad--v t-center">
-        <span>
+    <footer id="footer" class="bigslice bigSlice--footer slicePad--h slicePad--v t-center">
         <script type="text/javascript">
-  				document.write(new Date().getFullYear());
+  			var footer = document.getElementById('footer');
+
+
+var year = document.createTextNode(new Date().getFullYear());
+var showYear = document.createElement("span");
+var insertYear = showYear.appendChild(year);
+
+var copyRightName = document.getElementById("copyRightName");
+
+footer.insertBefore(insertYear, copyRightName);
 		</script>
+		<span id="copyRightName">
  		© Philippe Tasch 
  		</span>
 </footer>
 </div>
 
   <script type="text/javascript" src="scripts/main.min.js"></script>
+
 
 
 <script type="text/javascript">
@@ -287,6 +301,7 @@
         headroom.init();
 
     </script>
+
     <script type="text/javascript">
     var nav = responsiveNav(".navigation", { // Selector
     animate: true, // Boolean: Use CSS3 transitions, true or false

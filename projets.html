@@ -13,12 +13,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,900" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
     <title> Philippe Tasch | Projets </title>
-    <meta name="description" content="Site personnel de Philippe Tasch, Webdesigner - intégrateur.">
+    <meta name="description" content="Site personnel de Philippe Tasch, Webdesigner - Intégrateur.">
     <meta name="keywords" content="HTML5, CSS3, Responsive Web Design, UX, UI, Webdesigner, Intégrateur, CV, Compétences, Accessibilité">
     <meta name="author" content="Philippe Tasch">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <link rel="stylesheet" href="css/styles.min.css">
+
+
     <!--[if lt IE 9]><script src="bower_components/html5shiv/dist/html5shiv.js"></script><![endif]-->
 </head>
 <body>
@@ -92,11 +95,20 @@
             
 
     </section>
-    <footer class="bigslice bigSlice--footer slicePad--h slicePad--v t-center">
-        <span>
+    <footer id="footer" class="bigslice bigSlice--footer slicePad--h slicePad--v t-center">
         <script type="text/javascript">
-  				document.write(new Date().getFullYear());
+  			var footer = document.getElementById('footer');
+
+
+var year = document.createTextNode(new Date().getFullYear());
+var showYear = document.createElement("span");
+var insertYear = showYear.appendChild(year);
+
+var copyRightName = document.getElementById("copyRightName");
+
+footer.insertBefore(insertYear, copyRightName);
 		</script>
+		<span id="copyRightName">
  		© Philippe Tasch 
  		</span>
 </footer>
