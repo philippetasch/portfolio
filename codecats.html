@@ -10,6 +10,7 @@
    document.documentElement.className += " js";
 </script>
 
+
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,900" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
     <title> Philippe Tasch | Codecats </title>
@@ -30,6 +31,9 @@
       Javascript est désactivé dans votre navigateur! Rassurez-vous, le site est pensé pour. Bonne visite!
     </div>
     </noscript>
+
+     
+
   
 
 		
@@ -143,7 +147,29 @@
 	</section>
 
 
+
 	
 
+   
+
+
+    
+<script>
+
+var introTitle = document.getElementsByClassName('intro-info-title');
+
+var blob = new Waypoint({
+    element: introTitle,
+    handler: function() {
+      console.log('right story waypoint triggered');
+    this.element.classList.add('waypoint-shown');
+    this.destroy()
+    },
+
+  offset: "66%",
+
+  })
+
+</script>
 </body>
 </html>

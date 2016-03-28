@@ -10,6 +10,7 @@
    document.documentElement.className += " js";
 </script>
 
+
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,900" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
     <title> Philippe Tasch | Webdesigner </title>
@@ -30,11 +31,13 @@
       Javascript est désactivé dans votre navigateur! Rassurez-vous, le site est pensé pour. Bonne visite!
     </div>
     </noscript>
+
+     
+
   
 
 		
     <div class="wrapper stretch--v">
-
         <header class="bigSlice bigSlice--header headroom--home">
     <div class="maxWrapper maxWrapper--header gridClear">
             <button id="trigger" class="trigger">
@@ -111,7 +114,7 @@
                 
             </div>
                 <a href="cv/cv_Tasch_Philippe.pdf" class="btn btn--slice btn--cv">
-                    Voir mon CV !
+                    Voir mon CV 
                 </a>
         </section>
         <section id="skills" class="bigSlice bigSlice--skills slicePad--h slope-bottom">
@@ -215,7 +218,7 @@
                         <div class="tiles__overlay">
                             <div class="tiles__title">
                                 <h3 class="h3 h3--overlay">Site Portfolio</h3>
-                                <p class="h4 h4--overlay">Site Portfolio</p>
+                                <p class="h4 h4--overlay">Refonte Site Portfolio</p>
                                 <a href="site-perso-v1.html" class="tiles__btn">Voir plus</a>
                                 <a href="https://www.blargh.byethost31.com" class="tiles__btn">Lien Site</a>
                             </div>
@@ -238,7 +241,7 @@
             
         </div>
             <a href="projets.html" class="btn btn--slice btn--projects">
-                Voir tous mes projets !
+                Voir tous mes projets 
             </a>
     </section>
     <section id="contact" class="bigSlice bigSlice--contact slicePad--h">
@@ -252,38 +255,78 @@
             </div>
         </div>
 
-
-
     </section>
+
     <footer id="footer" class="bigslice bigSlice--footer slicePad--h slicePad--v t-center">
 		<span id="copyRightName">
  		© Philippe Tasch 
  		</span>
 </footer>
+
+      <script src="/scripts/main.min.js"></script>
+
+
 </div>
 
-  <script type="text/javascript" src="scripts/main.min.js"></script>
+ 
 
 
+<script type="text/javascript">
+        var myElement = document.querySelector(".headroom--home");
+                // construct an instance of Headroom, passing the element
+        var headroom  = new Headroom(myElement,
 
+            Headroom.options = {
+                tolerance : {
+                  up : 0,
+                  down : 0
+                },
+                offset : 180,
+                scroller: window,
+                classes : {
+                  pinned : 'headroom--pinned',
+                  unpinned : 'headroom--unpinned',
+                  top : 'headroom--top',
+                  notTop : 'headroom--not-top',
+                  initial : 'headroom'
+                }
+              });
+                // initialise
+        headroom.init();
+</script>
+<script type="text/javascript">
 
-<script>
+    var nav = responsiveNav(".navigation", { // Selector
+    animate: true, // Boolean: Use CSS3 transitions, true or false
+    transition: 284, // Integer: Speed of the transition, in milliseconds
+    label: "", // String: Label for the navigation toggle
+    insert: "", // String: Insert the toggle before or after the navigation
+    customToggle: "trigger", // Selector: Specify the ID of a custom toggle
+    closeOnNavClick: true, // Boolean: Close the navigation when one of the links are clicked
+    openPos: "relative", // String: Position of the opened nav, relative or static
+    navClass: "navigation", // String: Default CSS class. If changed, you need to edit the CSS too!
+    navActiveClass: "js-nav-active", // String: Class that is added to <html> element when nav is active
+        jsClass: "js", // String: 'JS enabled' class which is added to <html> element
+            init: function(){}, // Function: Init callback
+            open: function(){}, // Function: Open callback
+            close: function(){} // Function: Close callback
+            });
 
-var skillCont = document.getElementsByClassName('skills__icon--container');
+</script>
+<script type="text/javascript">
 
-for (var i = 0; i < skillCont.length; i++) {
-  new Waypoint({
-    element: skillCont[i],
-    handler: function() {
-      console.log('Skills waypoint triggered');
-    this.element.classList.add('waypoint-bounce');
-    this.destroy()
-    },
+    smoothScroll.init({
+            speed: 800, // Integer. How fast to complete the scroll in milliseconds
+            easing: 'easeInOutCubic', // Easing pattern to use
+            updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+            offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+            callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
+            callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
+            });
 
-  offset: "70%",
+</script>
 
-  })
-}
+<script type="text/javascript">
 
 var appearLeft = document.getElementsByClassName('about__text--left');
 for (var i = 0; i < appearLeft.length; i++) {
@@ -315,61 +358,63 @@ for (var i = 0; i < appearRight.length; i++) {
   })
 }
 
+var skillCont = document.getElementsByClassName('skills__icon--container');
+
+for (var i = 0; i < skillCont.length; i++) {
+  new Waypoint({
+    element: skillCont[i],
+    handler: function() {
+      console.log('Skills waypoint triggered');
+    this.element.classList.add('waypoint-bounce');
+    this.destroy()
+    },
+
+  offset: "70%",
+
+  })
+}
+
+var skillCont = document.getElementsByClassName('btn--slice');
+
+for (var i = 0; i < skillCont.length; i++) {
+  new Waypoint({
+    element: skillCont[i],
+    handler: function() {
+      console.log('Button waypoint triggered');
+    this.element.classList.add('btn--fill');
+    this.destroy()
+    },
+
+  offset: "78%",
+
+  })
+}
 
 </script>
-<script type="text/javascript">
-        var myElement = document.querySelector(".headroom--home");
-                // construct an instance of Headroom, passing the element
-        var headroom  = new Headroom(myElement,
-
-            Headroom.options = {
-                tolerance : {
-                  up : 0,
-                  down : 0
-                },
-                offset : 180,
-                scroller: window,
-                classes : {
-                  pinned : 'headroom--pinned',
-                  unpinned : 'headroom--unpinned',
-                  top : 'headroom--top',
-                  notTop : 'headroom--not-top',
-                  initial : 'headroom'
-                }
-              });
-                // initialise
-        headroom.init();
-
-    var nav = responsiveNav(".navigation", { // Selector
-    animate: true, // Boolean: Use CSS3 transitions, true or false
-    transition: 284, // Integer: Speed of the transition, in milliseconds
-    label: "", // String: Label for the navigation toggle
-    insert: "", // String: Insert the toggle before or after the navigation
-    customToggle: "trigger", // Selector: Specify the ID of a custom toggle
-    closeOnNavClick: true, // Boolean: Close the navigation when one of the links are clicked
-    openPos: "relative", // String: Position of the opened nav, relative or static
-    navClass: "navigation", // String: Default CSS class. If changed, you need to edit the CSS too!
-    navActiveClass: "js-nav-active", // String: Class that is added to <html> element when nav is active
-        jsClass: "js", // String: 'JS enabled' class which is added to <html> element
-            init: function(){}, // Function: Init callback
-            open: function(){}, // Function: Open callback
-            close: function(){} // Function: Close callback
-            });
-
-    smoothScroll.init({
-            speed: 800, // Integer. How fast to complete the scroll in milliseconds
-            easing: 'easeInOutCubic', // Easing pattern to use
-            updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
-            offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
-            callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
-            callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
-            });
-
-    </script>
-
 
 
 	
 
+   
+
+
+    
+<script>
+
+var introTitle = document.getElementsByClassName('intro-info-title');
+
+var blob = new Waypoint({
+    element: introTitle,
+    handler: function() {
+      console.log('right story waypoint triggered');
+    this.element.classList.add('waypoint-shown');
+    this.destroy()
+    },
+
+  offset: "66%",
+
+  })
+
+</script>
 </body>
 </html>

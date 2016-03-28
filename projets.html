@@ -10,6 +10,7 @@
    document.documentElement.className += " js";
 </script>
 
+
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,900" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
     <title> Philippe Tasch | Projets </title>
@@ -30,6 +31,9 @@
       Javascript est désactivé dans votre navigateur! Rassurez-vous, le site est pensé pour. Bonne visite!
     </div>
     </noscript>
+
+     
+
   
 
 		
@@ -72,7 +76,7 @@
                         <div class="tiles__overlay">
                             <div class="tiles__title">
                                 <h3 class="h3 h3--overlay">Site Portfolio</h3>
-                                <p class="h4 h4--overlay">Site Portfolio</p>
+                                <p class="h4 h4--overlay">Refonte Site Portfolio</p>
                                 <a href="site-perso-v1.html" class="tiles__btn">Voir plus</a>
                                 <a href="https://www.blargh.byethost31.com" class="tiles__btn">Lien Site</a>
                             </div>
@@ -126,5 +130,26 @@ body.classList.remove('disable-hover');
 
 	
 
+   
+
+
+    
+<script>
+
+var introTitle = document.getElementsByClassName('intro-info-title');
+
+var blob = new Waypoint({
+    element: introTitle,
+    handler: function() {
+      console.log('right story waypoint triggered');
+    this.element.classList.add('waypoint-shown');
+    this.destroy()
+    },
+
+  offset: "66%",
+
+  })
+
+</script>
 </body>
 </html>
