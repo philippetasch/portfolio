@@ -43,7 +43,7 @@
 
 		
 
-    <section id="projects" class="bigSlice bigSlice--projects--page wholePageSlice accomodateFooter gridClear count-projects">
+    <section id="projects" class="bigSlice bigSlice--project--page wholePageSlice accomodateFooter gridClear count-projects">
 
             <a href="index.html" class="retour backHome">
                 <i class="fa fa-home project-nav__icon"></i>
@@ -51,53 +51,53 @@
             </a>
 
             
-                <div class="c-left grids--zero g-3--zero tiles tiles--projects">
+                <div class="c-left project project--all">
                     <div class="ratio--rel ratio--rel__80 mini-project bg-img bg-project">
-                        <div class="tiles__overlay">
-                            <div class="tiles__title">
+                        <div class="project__overlay">
+                            <div class="project__infos">
                                 <h3 class="h3 h3--overlay">Codecats</h3>
                                 <p class="h4 h4--overlay">Projet universitaire Master 2</p>
-                                <a href="codecats.html" class="tiles__btn">Voir plus</a>
-                                <a href="https://etudiants-caweb.u-strasbg.fr/1314/phil.t/Projet/" class="tiles__btn">Lien Site</a>
+                                <a href="codecats.html" class="project__btn">Voir plus</a>
+                                <a href="https://etudiants-caweb.u-strasbg.fr/1314/phil.t/Projet/" class="project__btn">Lien Site</a>
                             </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="grids--zero g-3--zero tiles tiles--projects">
+                <div class="project project--all">
                     <div class="ratio--rel ratio--rel__80 emmaus bg-img bg-project">
-                        <div class="tiles__overlay">
-                            <div class="tiles__title">
+                        <div class="project__overlay">
+                            <div class="project__infos">
                                 <h3 class="h3 h3--overlay">Emmaüs Strasbourg</h3>
                                 <p class="h4 h4--overlay">Refonte site Emmaus Strasbourg</p>
-                                <a href="emmaus.html" class="tiles__btn">Voir plus</a>
-                                <a href="" class="tiles__btn">Lien Site</a>
+                                <a href="emmaus.html" class="project__btn">Voir plus</a>
+                                <a href="" class="project__btn">Lien Site</a>
                             </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="grids--zero g-3--zero tiles tiles--projects">
+                <div class="project project--all">
                     <div class="ratio--rel ratio--rel__80 portfolio bg-img bg-project">
-                        <div class="tiles__overlay">
-                            <div class="tiles__title">
+                        <div class="project__overlay">
+                            <div class="project__infos">
                                 <h3 class="h3 h3--overlay">Site Portfolio</h3>
                                 <p class="h4 h4--overlay">Refonte Site Portfolio</p>
-                                <a href="site-perso-v1.html" class="tiles__btn">Voir plus</a>
-                                <a href="https://www.blargh.byethost31.com" class="tiles__btn">Lien Site</a>
+                                <a href="site-perso-v1.html" class="project__btn">Voir plus</a>
+                                <a href="https://www.blargh.byethost31.com" class="project__btn">Lien Site</a>
                             </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="grids--zero g-3--zero tiles tiles--projects">
+                <div class="project project--all">
                     <div class="ratio--rel ratio--rel__80 vijump bg-img bg-project">
-                        <div class="tiles__overlay">
-                            <div class="tiles__title">
+                        <div class="project__overlay">
+                            <div class="project__infos">
                                 <h3 class="h3 h3--overlay">ViJump</h3>
                                 <p class="h4 h4--overlay">Refonte site et application ViJump</p>
-                                <a href="vijump.html" class="tiles__btn">Voir plus</a>
-                                <a href="https://www.vijump.com/#!/" class="tiles__btn">Lien Site</a>
+                                <a href="vijump.html" class="project__btn">Voir plus</a>
+                                <a href="https://www.vijump.com/#!/" class="project__btn">Lien Site</a>
                             </div>
                         </div>
                     </div>
@@ -151,17 +151,17 @@
 
         <script>
 
-            var introTitle = document.getElementsByClassName('intro-info-title');
+            var introTitle = document.getElementById('card__title-wrapper');
 
             var blob = new Waypoint({
                 element: introTitle,
                 handler: function() {
-                  console.log('right story waypoint triggered');
+                  console.log('title fell into place');
                 this.element.classList.add('waypoint-shown');
                 this.destroy()
                 },
 
-              offset: "66%",
+              offset: "40%",
 
               })
 
