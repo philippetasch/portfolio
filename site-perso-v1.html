@@ -14,8 +14,8 @@
 
         <meta charset="utf-8">
         <title> Philippe Tasch | Site Portfolio </title>
-        <meta name="description" content="Site personnel de Philippe Tasch, Webdesigner - Intégrateur.">
-        <meta name="keywords" content="HTML5, CSS3, Responsive Web Design, UX, UI, Webdesigner, Intégrateur, CV, Compétences, Accessibilité">
+        <meta name="description" content="Site personnel de Philippe Tasch, Intégrateur - Développeur.">
+        <meta name="keywords" content="HTML5, CSS3, Responsive Web Design, UX, UI, Intégrateur, Développeur, CV, Accessibilité">
         <meta name="author" content="Philippe Tasch">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -59,14 +59,19 @@
 			<i class="fa fa-flask project-nav__icon"></i>
 			<span class="project-nav__text">Projets</span>
 		</a>
-		<a href="emmaus.html" class="project-nav__item project-nav__item--all previousWork">
-			<i class="fa fa-arrow-left project-nav__icon"></i>
-			<span class="project-nav__text">Précédent</span>
-		</a>
-		<a href="vijump.html" class="project-nav__item project-nav__item--all nextWork">
-			<span class="project-nav__text">Suivant</span>
-			<i class="fa fa-arrow-right project-nav__icon"></i>
-		</a>
+		
+			<a href="codecats.html" class="project-nav__item project-nav__item--all previousWork">
+				<i class="fa fa-arrow-left project-nav__icon"></i>
+				<span class="project-nav__text">Précédent</span>
+			</a>
+		
+
+		
+			<a href="emmaus.html" class="project-nav__item project-nav__item--all nextWork">
+				<span class="project-nav__text">Suivant</span>
+				<i class="fa fa-arrow-right project-nav__icon"></i>
+			</a>
+		
 	</nav>
 </div>
 
@@ -74,15 +79,20 @@
 			
 <div class="maxWrapper slicePad--h">
 	
-		<img src="img/site-perso-v1/site-perso-v1@992.jpg" alt="Site portfolio première version" class="img--resp img--projet center" srcset="img/site-perso-v1/site-perso-v1@480.jpg 480w,img/site-perso-v1/site-perso-v1@768.jpg 768w,img/site-perso-v1/site-perso-v1@992.jpg 992w,img/site-perso-v1/site-perso-v1@1170.jpg 1170w" sizes="(min-width: 1170px) 1170px,(min-width: 992px) 992px,(min-width: 768px) 768px,(min-width: 480px) 480px">
+		<img src="img/site-perso/site-perso-v1@992.jpg" alt="Site portfolio première version" class="img--resp img--projet center" srcset="
+						img/site-perso/site-perso-v1@480.jpg 480w,
+						img/site-perso/site-perso-v1@768.jpg 768w,
+						img/site-perso/site-perso-v1@992.jpg 992w,img/site-perso/site-perso-v1@1170.jpg 1170w" sizes="(min-width: 1170px) 1170px,(min-width: 992px) 992px,(min-width: 768px) 768px,(min-width: 480px) 480px">
 	
 </div>
 <section class="bigSlice bigSlice--project-card slicePad--v--top">
 	<div class="maxWrapper maxWrapper--single-project gridClear slicePad--v--top slicePad--h">
 		<header class="card__title-wrapper" id="card__title-wrapper">
 			<div class="card__title-info">
-				2014
-				<span class="duree">
+				<span class="card__year">
+					2014
+				</span>
+				<span class="card__duration">
 					2 mois
 				</span>
 			</div>
@@ -124,19 +134,19 @@
 			Cette première version se présentait sous la forme d'une simple page sur laquelle se trouvaient des détails concernant mon parcours et mes compétences, des liens directs vers mes projets, ainsi qu'un formulaire de contact. Le site était bien évidemment responsive et s'adaptait à différentes tailles d'écran. La navigation, simple, permettait d'accéder aux différentes sections de la page que ce soit sur écran d'ordinateur ou de mobile.
 		</p>
 		<aside class="img--description img--description--left" data-alt="Site personnel section compétences">
-			<img src="img/site-perso-v1/site-perso-v1-competences@600x422.jpg" alt="Site personnel section compétences" class="img--resp project-description-image">
+			<img src="img/site-perso/site-perso-v1-competences@600x422.jpg" alt="Site personnel section compétences" class="img--resp project-description-image">
 		</aside>
 		<p class="center project-max-text">
 			J'ai opté pour des couleurs discrètes, beige et bleu-marine, que j'ai utilisées comme couleurs de fond des différentes sections de la page. Je me suis tourné vers une palette de couleurs plus vive pour les éléments de navigation, afin de créer un certain contraste avec le reste du site. Toutefois, j'ai vite trouvé que mon site portfolio était trop simple et pourrait bénéficier de nombreuses améliorations, qu'elles concernent le design ou le code. J'ai donc procédé à un ravalement de façade complet en mettant à profit des nouvelles compétences acquises au cours de la deuxième année de Master CAWEB. Désormais le site n'est plus constitué d'une seule et unique page. Il comporte une page d'accueil, une page recensant  tous les projets ainsi qu'une page supplémentaire décrivant chaque projet.
 		</p>
 		<aside class="img--description img--description--right" data-alt="Site personnel section projets">
-			<img src="img/site-perso-v1/site-perso-v1-projets@600x422.jpg" alt="Site personnel section projets" class="img--resp project-description-image">
+			<img src="img/site-perso/site-perso-v1-projets@600x422.jpg" alt="Site personnel section projets" class="img--resp project-description-image">
 		</aside>
 		<p class="center project-max-text">
 			J'ai repris le code à zéro et ai apporté un nombre conséquent de modifications au design, tout en gardant la palette de couleurs d'origine. J'ai pu rapidement créer, grâce à SASS, une grille CSS basique adaptée à mes besoins pour ce site. Plutôt que de limiter les couleurs plus vives à la navigation seule, j'ai fait le choix de les appliquer à chaque section afin de faire correspondre chaque onglet de navigation au contenu vers lequel il pointe.
 		</p>
 		<aside class="img--description img--description--left" data-alt="Site personnel menu responsive">
-			<img src="img/site-perso-v1/site-perso-v1-responsive@600x422.jpg" alt="Site personnel menu responsive" class="img--resp project-description-image">
+			<img src="img/site-perso/site-perso-v1-responsive@600x422.jpg" alt="Site personnel menu responsive" class="img--resp project-description-image">
 		</aside>
 		<p class="center project-max-text">
 			Côté HTML, le système de templates JavaScript Nunjucks s'est révélé être d'une grande utilité dans la construction de pages HTML statiques, puisqu'il m'a permis, de réduire des parties de pages à l'état de composants et de ne les inclure que lorsqu'ils s'avèrent nécessaires. JSON est venu compléter le tableau : j'ai stocké la majorité des données textuelles dans un fichier JSON et ai injecté, via Gulp, toutes les données dans les templates Nunjucks au moment de la compilation. La séparation des balises HTML et de leur contenu me permet de garder un HTML propre et de n'avoir recours qu'au fichier JSON pour toute modification à apporter au contenu.
@@ -147,19 +157,32 @@
 			
 			
 <footer>
-	<section class="bigSlice gridClear t-center pagination">
+	<section class="bigSlice gridClear pagination">
+
+	
+
 		<div class="pagination__wrapper">
-			<a href="emmaus.html" class="pagination__link pagination__link--previous slicePad--v">
-				<i class="fa fa-arrow-left project-nav__icon"></i>
-				<span class="project-nav__text">Précédent</span>
+			<a href="codecats.html" class="pagination__link pagination__link--previous slicePad--v">
+				<span class="pagination__text">
+					<small>Précédent</small>
+					<span>Codecats</span>
+				</span>
 			</a>
 		</div>
+
+	
+
+	
 		<div class="pagination__wrapper">
-			<a href="vijump.html" class="pagination__link pagination__link--next slicePad--v">
-				<span class="project-nav__text">Suivant</span>
-				<i class="fa fa-arrow-right project-nav__icon"></i>
+			<a href="emmaus.html" class="pagination__link pagination__link--next slicePad--v">
+				<span class="pagination__text">
+					<small>Suivant</small>
+					<span>Emmaus Strasbourg</span>
+				</span>
 			</a>
 		</div>
+	
+
 	</section>
 </footer>
 
@@ -174,24 +197,6 @@
 
            
 
-
-        <script>
-
-            var introTitle = document.getElementById('card__title-wrapper');
-
-            var blob = new Waypoint({
-                element: introTitle,
-                handler: function() {
-                  console.log('title fell into place');
-                this.element.classList.add('waypoint-shown');
-                this.destroy()
-                },
-
-              offset: "40%",
-
-              })
-
-        </script>
 
     </body>
 

@@ -14,8 +14,8 @@
 
         <meta charset="utf-8">
         <title> Philippe Tasch | Vijump </title>
-        <meta name="description" content="Site personnel de Philippe Tasch, Webdesigner - Intégrateur.">
-        <meta name="keywords" content="HTML5, CSS3, Responsive Web Design, UX, UI, Webdesigner, Intégrateur, CV, Compétences, Accessibilité">
+        <meta name="description" content="Site personnel de Philippe Tasch, Intégrateur - Développeur.">
+        <meta name="keywords" content="HTML5, CSS3, Responsive Web Design, UX, UI, Intégrateur, Développeur, CV, Accessibilité">
         <meta name="author" content="Philippe Tasch">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -45,28 +45,33 @@
 
 	
 
-		<section class="project-vijump">
+		<section class="vijump">
 
 			
 			
 <div class="maxWrapper slicePad--h">
 	<nav class="project-nav gridClear slicePad--v">
-		<a href="index.html" class="project-nav__item--not-all project-nav__item backHome">
+		<a href="index.html" class="project-nav__item project-nav__item--all backHome">
 			<i class="fa fa-home project-nav__icon"></i>
 			<span class="project-nav__text">Accueil</span>
 		</a>
-		<a href="projets.html" class="project-nav__item--not-all project-nav__item backProjects">
+		<a href="projets.html" class="project-nav__item project-nav__item--all backProjects">
 			<i class="fa fa-flask project-nav__icon"></i>
 			<span class="project-nav__text">Projets</span>
 		</a>
-		<a href="site-perso-v1.html" class="project-nav__item--not-all project-nav__item previousWork">
-			<i class="fa fa-arrow-left project-nav__icon"></i>
-			<span class="project-nav__text">Précédent</span>
-		</a>
-		<a href="" class="hidden">
-			<span class="project-nav__text">Suivant</span>
-			<i class="fa fa-arrow-right project-nav__icon"></i>
-		</a>
+		
+			<a href="phpim.html" class="project-nav__item project-nav__item--all previousWork">
+				<i class="fa fa-arrow-left project-nav__icon"></i>
+				<span class="project-nav__text">Précédent</span>
+			</a>
+		
+
+		
+			<a href="codecats.html" class="project-nav__item project-nav__item--all nextWork">
+				<span class="project-nav__text">Suivant</span>
+				<i class="fa fa-arrow-right project-nav__icon"></i>
+			</a>
+		
 	</nav>
 </div>
 
@@ -74,15 +79,20 @@
 			
 <div class="maxWrapper slicePad--h">
 	
-		<img src="img/vijump/vijump@992.jpg" alt="Projet ViJump page d'accueil" class="img--resp img--projet center main-img" srcset="img/vijump/vijump@480.jpg 480w,img/vijump/vijump@768.jpg 768w,img/vijump/vijump@992.jpg 992w,img/vijump/vijump@1170.jpg 1170w" sizes="(min-width: 1170px) 1170px,(min-width: 992px) 992px,(min-width: 768px) 768px,(min-width: 480px) 480px">
+		<img src="img/vijump/vijump@992.jpg" alt="Projet ViJump page d'accueil" class="img--resp img--projet center main-img" srcset="
+						img/vijump/vijump@480.jpg 480w,
+						img/vijump/vijump@768.jpg 768w,
+						img/vijump/vijump@992.jpg 992w,img/vijump/vijump@1170.jpg 1170w" sizes="(min-width: 1170px) 1170px,(min-width: 992px) 992px,(min-width: 768px) 768px,(min-width: 480px) 480px">
 	
 </div>
 <section class="bigSlice bigSlice--project-card slicePad--v--top">
 	<div class="maxWrapper maxWrapper--single-project gridClear slicePad--v--top slicePad--h">
 		<header class="card__title-wrapper" id="card__title-wrapper">
 			<div class="card__title-info">
-				2015
-				<span class="duree">
+				<span class="card__year">
+					2015
+				</span>
+				<span class="card__duration">
 					6 mois
 				</span>
 			</div>
@@ -147,19 +157,32 @@
 			
 			
 <footer>
-	<section class="bigSlice gridClear t-center pagination">
-		<div class="pagination__wrapper t-center pagination__wrapper--only-child">
-			<a href="site-perso-v1.html" class="pagination__link pagination__link--previous slicePad--v">
-				<i class="fa fa-arrow-left project-nav__icon"></i>
-				<span class="project-nav__text">Précédent</span>
+	<section class="bigSlice gridClear pagination">
+
+	
+
+		<div class="pagination__wrapper">
+			<a href="phpim.html" class="pagination__link pagination__link--previous slicePad--v">
+				<span class="pagination__text">
+					<small>Précédent</small>
+					<span>PHPim</span>
+				</span>
 			</a>
 		</div>
-		<div class="pagination__wrapper hidden">
-			<a href="" class="pagination__link pagination__link--next slicePad--v">
-				<span class="project-nav__text">Suivant</span>
-				<i class="fa fa-arrow-right project-nav__icon"></i>
+
+	
+
+	
+		<div class="pagination__wrapper">
+			<a href="codecats.html" class="pagination__link pagination__link--next slicePad--v">
+				<span class="pagination__text">
+					<small>Suivant</small>
+					<span>Codecats</span>
+				</span>
 			</a>
 		</div>
+	
+
 	</section>
 </footer>
 
@@ -174,24 +197,6 @@
 
            
 
-
-        <script>
-
-            var introTitle = document.getElementById('card__title-wrapper');
-
-            var blob = new Waypoint({
-                element: introTitle,
-                handler: function() {
-                  console.log('title fell into place');
-                this.element.classList.add('waypoint-shown');
-                this.destroy()
-                },
-
-              offset: "40%",
-
-              })
-
-        </script>
 
     </body>
 

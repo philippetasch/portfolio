@@ -14,8 +14,8 @@
 
         <meta charset="utf-8">
         <title> Philippe Tasch | Projets </title>
-        <meta name="description" content="Site personnel de Philippe Tasch, Webdesigner - Intégrateur.">
-        <meta name="keywords" content="HTML5, CSS3, Responsive Web Design, UX, UI, Webdesigner, Intégrateur, CV, Compétences, Accessibilité">
+        <meta name="description" content="Site personnel de Philippe Tasch, Intégrateur - Développeur.">
+        <meta name="keywords" content="HTML5, CSS3, Responsive Web Design, UX, UI, Intégrateur, Développeur, CV, Accessibilité">
         <meta name="author" content="Philippe Tasch">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -52,7 +52,33 @@
 
             
                 <div class="c-left project project--all">
-                    <div class="ratio--rel ratio--rel__80 mini-project bg-img bg-project">
+                    <div class="ratio--rel ratio--rel__80 project-phpim bg-img bg-project">
+                        <div class="project__overlay">
+                            <div class="project__infos">
+                                <h3 class="h3 h3--overlay">PHPim</h3>
+                                <p class="h4 h4--overlay">Développement application PHPim</p>
+                                <a href="phpim.html" class="project__btn">Voir plus</a>
+                                <a href="http://wf3.progweb.fr" class="project__btn">Lien Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="project project--all">
+                    <div class="ratio--rel ratio--rel__80 project-vijump bg-img bg-project">
+                        <div class="project__overlay">
+                            <div class="project__infos">
+                                <h3 class="h3 h3--overlay">ViJump</h3>
+                                <p class="h4 h4--overlay">Refonte site et application ViJump</p>
+                                <a href="vijump.html" class="project__btn">Voir plus</a>
+                                <a href="https://www.vijump.com/#!/" class="project__btn">Lien Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="project project--all">
+                    <div class="ratio--rel ratio--rel__80 project-codecats bg-img bg-project">
                         <div class="project__overlay">
                             <div class="project__infos">
                                 <h3 class="h3 h3--overlay">Codecats</h3>
@@ -65,20 +91,7 @@
                 </div>
             
                 <div class="project project--all">
-                    <div class="ratio--rel ratio--rel__80 emmaus bg-img bg-project">
-                        <div class="project__overlay">
-                            <div class="project__infos">
-                                <h3 class="h3 h3--overlay">Emmaüs Strasbourg</h3>
-                                <p class="h4 h4--overlay">Refonte site Emmaus Strasbourg</p>
-                                <a href="emmaus.html" class="project__btn">Voir plus</a>
-                                <a href="" class="project__btn">Lien Site</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="project project--all">
-                    <div class="ratio--rel ratio--rel__80 portfolio bg-img bg-project">
+                    <div class="ratio--rel ratio--rel__80 project-portfolio bg-img bg-project">
                         <div class="project__overlay">
                             <div class="project__infos">
                                 <h3 class="h3 h3--overlay">Site Portfolio</h3>
@@ -91,13 +104,13 @@
                 </div>
             
                 <div class="project project--all">
-                    <div class="ratio--rel ratio--rel__80 vijump bg-img bg-project">
+                    <div class="ratio--rel ratio--rel__80 project-emmaus bg-img bg-project">
                         <div class="project__overlay">
                             <div class="project__infos">
-                                <h3 class="h3 h3--overlay">ViJump</h3>
-                                <p class="h4 h4--overlay">Refonte site et application ViJump</p>
-                                <a href="vijump.html" class="project__btn">Voir plus</a>
-                                <a href="https://www.vijump.com/#!/" class="project__btn">Lien Site</a>
+                                <h3 class="h3 h3--overlay">Emmaüs Strasbourg</h3>
+                                <p class="h4 h4--overlay">Refonte site Emmaus Strasbourg</p>
+                                <a href="emmaus.html" class="project__btn">Voir plus</a>
+                                <a href="" class="project__btn">Lien Site</a>
                             </div>
                         </div>
                     </div>
@@ -148,24 +161,6 @@
 
            
 
-
-        <script>
-
-            var introTitle = document.getElementById('card__title-wrapper');
-
-            var blob = new Waypoint({
-                element: introTitle,
-                handler: function() {
-                  console.log('title fell into place');
-                this.element.classList.add('waypoint-shown');
-                this.destroy()
-                },
-
-              offset: "40%",
-
-              })
-
-        </script>
 
     </body>
 
